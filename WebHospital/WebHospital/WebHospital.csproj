@@ -1,0 +1,378 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA5F7DA7-989E-4D60-87E8-DB686EC33876}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebHospital</RootNamespace>
+    <AssemblyName>WebHospital</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
+    <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
+    <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
+    <Content Include="Vista\Source\Multiple Color Stylesheet\style-purple.css" />
+    <Content Include="Vista\Source\Multiple Color Stylesheet\style.css" />
+    <Content Include="Vista\Template\404.html" />
+    <Content Include="Vista\Template\503.html" />
+    <Content Include="Vista\Template\about.html" />
+    <Content Include="Vista\Template\blog-1.html" />
+    <Content Include="Vista\Template\blog-2.html" />
+    <Content Include="Vista\Template\blogs-1.html" />
+    <Content Include="Vista\Template\blogs-2.html" />
+    <Content Include="Vista\Template\blogs-3.html" />
+    <Content Include="Vista\Template\blogs-4.html" />
+    <Content Include="Vista\Template\blogs-5.html" />
+    <Content Include="Vista\Template\blogs-6.html" />
+    <Content Include="Vista\Template\blogs-7.html" />
+    <Content Include="Vista\Template\color-palette.html" />
+    <Content Include="Vista\Template\components.html" />
+    <Content Include="Vista\Template\contact.html" />
+    <Content Include="Vista\Template\css\animate.min.css" />
+    <Content Include="Vista\Template\css\bootstrap.min.css" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap.css" />
+    <Content Include="Vista\Template\css\flexslider.css" />
+    <Content Include="Vista\Template\css\fonts\flexslider-icon.svg" />
+    <Content Include="Vista\Template\css\fullcalendar.min.css" />
+    <Content Include="Vista\Template\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Vista\Template\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Vista\Template\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Vista\Template\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Vista\Template\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Vista\Template\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Vista\Template\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Vista\Template\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Vista\Template\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="Vista\Template\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="Vista\Template\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Vista\Template\css\invoice.css" />
+    <Content Include="Vista\Template\css\magnific-popup.css" />
+    <Content Include="Vista\Template\css\material.min.css" />
+    <Content Include="Vista\Template\css\mdl-selectfield.min.css" />
+    <Content Include="Vista\Template\css\owl.carousel.min.css" />
+    <Content Include="Vista\Template\css\owl.theme.default.css" />
+    <Content Include="Vista\Template\css\style-blue.css" />
+    <Content Include="Vista\Template\css\style-green.css" />
+    <Content Include="Vista\Template\css\style-orange.css" />
+    <Content Include="Vista\Template\css\style-purple.css" />
+    <Content Include="Vista\Template\css\style.css" />
+    <Content Include="Vista\Template\departments-1.html" />
+    <Content Include="Vista\Template\departments-2.html" />
+    <Content Include="Vista\Template\doctor-1.html" />
+    <Content Include="Vista\Template\doctor-2.html" />
+    <Content Include="Vista\Template\doctors-1.html" />
+    <Content Include="Vista\Template\doctors-2.html" />
+    <Content Include="Vista\Template\doctors-3.html" />
+    <Content Include="Vista\Template\doctors-4.html" />
+    <Content Include="Vista\Template\doctors-5.html" />
+    <Content Include="Vista\Template\doctors-6.html" />
+    <Content Include="Vista\Template\doctors-7.html" />
+    <Content Include="Vista\Template\doctors-8.html" />
+    <Content Include="Vista\Template\event-1.html" />
+    <Content Include="Vista\Template\event-2.html" />
+    <Content Include="Vista\Template\event-3.html" />
+    <Content Include="Vista\Template\faq.html" />
+    <Content Include="Vista\Template\font-awesome\css\font-awesome.css" />
+    <Content Include="Vista\Template\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Vista\Template\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Vista\Template\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Vista\Template\forgot.html" />
+    <Content Include="Vista\Template\gallery-1.html" />
+    <Content Include="Vista\Template\gallery.html" />
+    <Content Include="Vista\Template\images\favicon.png" />
+    <Content Include="Vista\Template\images\logo.png" />
+    <Content Include="Vista\Template\inc\contact-form.php" />
+    <Content Include="Vista\Template\inc\make-appointment.php" />
+    <Content Include="Vista\Template\index-1.html" />
+    <Content Include="Vista\Template\index-2.html" />
+    <Content Include="Vista\Template\index-3.html" />
+    <Content Include="Vista\Template\index-4.html" />
+    <Content Include="Vista\Template\index-5.html" />
+    <Content Include="Vista\Template\index.html" />
+    <Content Include="Vista\Template\invoice.html" />
+    <Content Include="Vista\Template\js\bootstrap.min.js" />
+    <Content Include="Vista\Template\js\custom.js" />
+    <Content Include="Vista\Template\js\fullcalendar.min.js" />
+    <Content Include="Vista\Template\js\invoice.js" />
+    <Content Include="Vista\Template\js\jquery-2.1.4.min.js" />
+    <Content Include="Vista\Template\js\jquery-scrolltofixed.min.js" />
+    <Content Include="Vista\Template\js\jquery.counterup.js" />
+    <Content Include="Vista\Template\js\jquery.flexslider.min.js" />
+    <Content Include="Vista\Template\js\jquery.magnific-popup.min.js" />
+    <Content Include="Vista\Template\js\jquery.waypoints.min.js" />
+    <Content Include="Vista\Template\js\material.min.js" />
+    <Content Include="Vista\Template\js\mdl-selectfield.min.js" />
+    <Content Include="Vista\Template\js\moment.min.js" />
+    <Content Include="Vista\Template\js\owl.carousel.min.js" />
+    <Content Include="Vista\Template\js\popper.min.js" />
+    <Content Include="Vista\Template\js\smoothscroll.min.js" />
+    <Content Include="Vista\Template\login.html" />
+    <Content Include="Vista\Template\myappointment.html" />
+    <Content Include="Vista\Template\myprofile.html" />
+    <Content Include="Vista\Template\myrequest.html" />
+    <Content Include="Vista\Template\privacy-policy.html" />
+    <Content Include="Vista\Template\register.html" />
+    <Content Include="Vista\Template\service.html" />
+    <Content Include="Vista\Template\services-1.html" />
+    <Content Include="Vista\Template\services-10.html" />
+    <Content Include="Vista\Template\services-2.html" />
+    <Content Include="Vista\Template\services-3.html" />
+    <Content Include="Vista\Template\services-4.html" />
+    <Content Include="Vista\Template\services-5.html" />
+    <Content Include="Vista\Template\services-6.html" />
+    <Content Include="Vista\Template\services-7.html" />
+    <Content Include="Vista\Template\services-8.html" />
+    <Content Include="Vista\Template\services-9.html" />
+    <Content Include="Vista\Template\terms-conditions.html" />
+    <Content Include="Vista\Template\uploads\130x115-comment.jpg" />
+    <Content Include="Vista\Template\uploads\130x115-recentpost.jpg" />
+    <Content Include="Vista\Template\uploads\1920x800-slider.jpg" />
+    <Content Include="Vista\Template\uploads\200x200-testimonial.jpg" />
+    <Content Include="Vista\Template\uploads\225x200-author.jpg" />
+    <Content Include="Vista\Template\uploads\375x360-doctorslider.jpg" />
+    <Content Include="Vista\Template\uploads\513x150-feature.jpg" />
+    <Content Include="Vista\Template\uploads\530x470-theme-block.jpg" />
+    <Content Include="Vista\Template\uploads\585x390.jpg" />
+    <Content Include="Vista\Template\uploads\620x680-service.jpg" />
+    <Content Include="Vista\Template\uploads\645x405-about.jpg" />
+    <Content Include="Vista\Template\uploads\660x750-about.jpg" />
+    <Content Include="Vista\Template\uploads\800x800-gallery.jpg" />
+    <Content Include="Vista\Template\uploads\author-1.jpg" />
+    <Content Include="Vista\Template\uploads\author-2.jpg" />
+    <Content Include="Vista\Template\uploads\background-1.jpg" />
+    <Content Include="Vista\Template\uploads\background-2.jpg" />
+    <Content Include="Vista\Template\uploads\background-3.jpg" />
+    <Content Include="Vista\Template\uploads\blog-1.jpg" />
+    <Content Include="Vista\Template\uploads\blog-10.jpg" />
+    <Content Include="Vista\Template\uploads\blog-11.jpg" />
+    <Content Include="Vista\Template\uploads\blog-2.jpg" />
+    <Content Include="Vista\Template\uploads\blog-3.jpg" />
+    <Content Include="Vista\Template\uploads\blog-4.jpg" />
+    <Content Include="Vista\Template\uploads\blog-5.jpg" />
+    <Content Include="Vista\Template\uploads\blog-6.jpg" />
+    <Content Include="Vista\Template\uploads\blog-7.jpg" />
+    <Content Include="Vista\Template\uploads\blog-8.jpg" />
+    <Content Include="Vista\Template\uploads\blog-9.jpg" />
+    <Content Include="Vista\Template\uploads\comment-1.jpg" />
+    <Content Include="Vista\Template\uploads\comment-2.jpg" />
+    <Content Include="Vista\Template\uploads\comment-3.jpg" />
+    <Content Include="Vista\Template\uploads\comment-4.jpg" />
+    <Content Include="Vista\Template\uploads\comment-5.jpg" />
+    <Content Include="Vista\Template\uploads\comment-6.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-1.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-10.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-11.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-12.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-2.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-3.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-4.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-5.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-6.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-7.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-8.jpg" />
+    <Content Include="Vista\Template\uploads\doctor-9.jpg" />
+    <Content Include="Vista\Template\uploads\feature-1.jpg" />
+    <Content Include="Vista\Template\uploads\feature-2.jpg" />
+    <Content Include="Vista\Template\uploads\feature-3.jpg" />
+    <Content Include="Vista\Template\uploads\feature-4.jpg" />
+    <Content Include="Vista\Template\uploads\feature-5.jpg" />
+    <Content Include="Vista\Template\uploads\feature-6.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\800x800-gallery.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-1.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-10.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-11.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-12.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-13.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-14.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-15.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-16.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-17.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-18.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-19.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-2.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-20.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-3.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-4.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-5.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-6.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-7.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-8.jpg" />
+    <Content Include="Vista\Template\uploads\gallery\gallery-9.jpg" />
+    <Content Include="Vista\Template\uploads\hm-about-1.jpg" />
+    <Content Include="Vista\Template\uploads\hm-about.jpg" />
+    <Content Include="Vista\Template\uploads\hm-service.jpg" />
+    <Content Include="Vista\Template\uploads\recent-1.jpg" />
+    <Content Include="Vista\Template\uploads\recent-2.jpg" />
+    <Content Include="Vista\Template\uploads\recent-3.jpg" />
+    <Content Include="Vista\Template\uploads\recent-4.jpg" />
+    <Content Include="Vista\Template\uploads\recent-5.jpg" />
+    <Content Include="Vista\Template\uploads\service-1.jpg" />
+    <Content Include="Vista\Template\uploads\service-10.jpg" />
+    <Content Include="Vista\Template\uploads\service-11.jpg" />
+    <Content Include="Vista\Template\uploads\service-12.jpg" />
+    <Content Include="Vista\Template\uploads\service-13.jpg" />
+    <Content Include="Vista\Template\uploads\service-14.jpg" />
+    <Content Include="Vista\Template\uploads\service-2.jpg" />
+    <Content Include="Vista\Template\uploads\service-3.jpg" />
+    <Content Include="Vista\Template\uploads\service-4.jpg" />
+    <Content Include="Vista\Template\uploads\service-5.jpg" />
+    <Content Include="Vista\Template\uploads\service-6.jpg" />
+    <Content Include="Vista\Template\uploads\service-7.jpg" />
+    <Content Include="Vista\Template\uploads\service-8.jpg" />
+    <Content Include="Vista\Template\uploads\service-9.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-1.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-2.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-3.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-4.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-5.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-6.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-7.jpg" />
+    <Content Include="Vista\Template\uploads\slide-doctor-8.jpg" />
+    <Content Include="Vista\Template\uploads\slider-1.jpg" />
+    <Content Include="Vista\Template\uploads\slider-2.jpg" />
+    <Content Include="Vista\Template\uploads\slider-3.jpg" />
+    <Content Include="Vista\Template\uploads\testimonial-1.jpg" />
+    <Content Include="Vista\Template\uploads\testimonial-2.jpg" />
+    <Content Include="Vista\Template\uploads\testimonial-3.jpg" />
+    <Content Include="Vista\Template\uploads\testimonial-4.jpg" />
+    <Content Include="Vista\Template\uploads\testimonial-5.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Vista\Source\SASS\partials\_variable.scss" />
+    <Content Include="Vista\Source\SASS\style.scss" />
+    <Content Include="Vista\Source\SASS\_buttons.scss" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap-grid.css.map" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap-reboot.css.map" />
+    <Content Include="Vista\Template\css\bootstrap\bootstrap.css.map" />
+    <Content Include="Vista\Template\css\fonts\flexslider-icon.eot" />
+    <Content Include="Vista\Template\css\fonts\flexslider-icon.ttf" />
+    <Content Include="Vista\Template\css\fonts\flexslider-icon.woff" />
+    <Content Include="Vista\Template\css\style.css.map" />
+    <Content Include="Vista\Template\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Vista\Template\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Vista\Template\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Vista\Template\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Vista\Template\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Vista\Template\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Vista\Template\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Vista\Template\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Vista\Template\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Vista\Template\sass\partials\_variable.scss" />
+    <Content Include="Vista\Template\sass\style.scss" />
+    <Content Include="Vista\Template\sass\_buttons.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Code\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55199</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55199/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
