@@ -67,6 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Vista\index-1.html" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -334,7 +339,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Code\" />
   </ItemGroup>
   <PropertyGroup>
